@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+}
+
+.center{
+  
+  text-align: center;
+
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+.main-content {
+  flex: 1; /* This makes the main content take up all the available space */
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
