@@ -11,8 +11,8 @@ class Ranking extends React.Component{
         }
 
         leaderboard = () =>{
-            fetch('http://localhost:3001/toptable',{
-                method : 'get',
+            fetch('https://facedetectapi-0667bec6ffc0.herokuapp.com/toptable',{
+                method : 'post',
                 headers:{'Content-Type' :'application/json'},
               
             })

@@ -66,7 +66,7 @@ class Register extends React.Component{
 
         if(this.InputsValidation()){
           
-          fetch('http://localhost:3001/register',{
+          fetch('https://facedetectapi-0667bec6ffc0.herokuapp.com/register',{
                 method : 'post',
                 headers : {'Content-Type':'application/json'},
                 body:JSON.stringify({

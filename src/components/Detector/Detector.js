@@ -32,7 +32,7 @@ class Detector extends React.Component {
 
         
         // detect api fetch
-        fetch('http://localhost:3001/detect',{
+        fetch('https://facedetectapi-0667bec6ffc0.herokuapp.com/detect',{
             method : 'post',
             headers:{'Content-Type' :'application/json'},
             body:JSON.stringify({
@@ -99,7 +99,7 @@ class Detector extends React.Component {
              this.props.onEntriesChange(newEntries+1);
             
                      // update database user entries  
-                     fetch('http://localhost:3001/updatentries',{
+                     fetch('https://facedetectapi-0667bec6ffc0.herokuapp.com/updatentries',{
                         method : 'put',
                         headers:{'Content-Type' :'application/json'},
                         body:JSON.stringify({
@@ -127,7 +127,7 @@ class Detector extends React.Component {
     addToUrl =(url)=>{
       
 
-        fetch('http://localhost:3001/urls',{
+        fetch('https://facedetectapi-0667bec6ffc0.herokuapp.com/urls',{
                         method : 'post',
                         headers:{'Content-Type' :'application/json'},
                         body:JSON.stringify({
