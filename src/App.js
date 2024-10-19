@@ -7,6 +7,7 @@ import Signin from './components/Signin/Signin';
 import Register from './components/Register/Register';
 import Detector from './components/Detector/Detector';
 import Footer from './components/Footer/Footer'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 class App extends React.Component {

@@ -2,43 +2,12 @@
     margin: 0;
     padding: 0;
 }
-.zone {
-    font-size:2em;
-    border-bottom:1px solid #bbb;
+
+.fontweight{
+    color: black;
+    font-weight: bold;
+    
 }
 
 
-.main-nav {
-    display: flex;
-    list-style: none;
-    font-size: 0.7em;
-    padding: 5px;
-   
-}
-.left-nav{
-    display: flex;
-    list-style: none;
-}
 
-.pushleft{
- margin-left: auto;
-}
-
-li {
-    padding: 6px;
-    margin-left: 35px;
-}
-
-a{
-    color: rgb(245, 245, 245);
-    text-decoration: none;
-}
-
-.black{
-    background: #171717e0;
-}
-
-.navtitle{
-    color: rgb(245, 245, 245);
-    cursor: pointer;
-}

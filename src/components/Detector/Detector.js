@@ -153,43 +153,37 @@ class Detector extends React.Component {
 
         return (
             <div>
-               <div className="centerv">
-                    <div className="centertext ">
-                    <div className='white f3'>
-                        {`${name}, your current entry count is...`}
-                    </div>
-                    <div className='white f1'>
-                        {`#${entries}`}
-                    </div>
-                        <p className='f3'>
-                        {'This Magic Brain will detect faces' + 
-                        ' in your pictures. Git it a try.'}
-                        </p> 
-                    </div>
-                      <br/><br/>
-                    <div className='form centertext pa4 br3 shadow-5'>
-                    <input className='f4 pa2 w-70 ' 
-                    type='text' 
-                    placeholder="put your image URL here !"
-                            onChange={this.onInputChange}
-                    />
-                    <button
-                    className='w-30 grow f4 link ph3 pv2 dib white bg-light-purple'
-                    onClick={this.onImgSubmit}>
-                        Detect</button>
-                    </div> 
-
-                   
-                   
-               </div> 
-                                
-               <div className="">
-                   <Imgbox input = {this.state.ImgSrc}
-                    box = {this.state.box}/>
-                   </div>
-                   
+              <div className="d-flex flex-column align-items-center p-4">
+                <div className="text-center mb-4">
+                  <h3 className="text-white">{`${name}, your current entry count is...`}</h3>
+                  <h1 className="text-white">{`#${entries}`}</h1>
+                  <p className="fs-3">
+                    {'This Magic Brain will detect faces in your pictures. Give it a try.'}
+                  </p>
+                </div>
+          
+                <div className="form-group w-100 text-center mb-5 p-4 rounded shadow-lg bg-light" style={{ maxWidth: '700px' }}>
+                  <input
+                    className="form-control form-control-lg mb-3"
+                    type="text"
+                    placeholder="Put your image URL here!"
+                    onChange={this.onInputChange}
+                  />
+                  <button
+                    className="btn btn-lg btn-primary w-100"
+                    onClick={this.onImgSubmit}
+                  >
+                    Detect
+                  </button>
+                </div>
+              </div>
+          
+              <div className="text-center">
+                <Imgbox input={this.state.ImgSrc} box={this.state.box} />
+              </div>
             </div>
-        );
+          );
+          
     }
 }
 

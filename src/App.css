@@ -16,16 +16,22 @@ html, body {
 .app-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Full viewport height */
+  min-height: 100vh; /* Ensure full height for layout */
 }
 
 .main-content {
-  flex: 1; /* This makes the main content take up all the available space */
+  flex-grow: 1; /* Make the content area grow to take up space */
+
 }
 
-footer {
-  background-color: #333;
-  color: white;
+.footer {
   text-align: center;
-  padding: 10px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  width: 100%;
+  position: fixed; /* Change to fixed to stick to the bottom */
+  bottom: 0; /* Stick to the bottom of the viewport */
+  left: 0; /* Make sure it's aligned to the left */
+  z-index: 10; /* Ensure it stays above other content */
+  
 }

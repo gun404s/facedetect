@@ -8,12 +8,12 @@ class Imgbox extends React.Component {
 
   render() {
     const { input, box } = this.props;
-
+  
     return (
-      <div className='ma centerimg'>
-        <div className='absolute mt2'>
+      <div className='centerimg'>
+        <div className='image-container'>
           <img id='inputimage' alt='' src={input} width='500px' height='auto' />
-
+  
           {/* Check if the box array has elements before mapping */}
           {box.length > 0 &&
             box.map((boundingBox, index) => (
@@ -21,6 +21,7 @@ class Imgbox extends React.Component {
                 key={index}
                 className='bounding-box'
                 style={{
+                  position: 'absolute', // Keep bounding box absolute
                   top: boundingBox.top,
                   right: boundingBox.right,
                   bottom: boundingBox.bottom,
@@ -29,10 +30,12 @@ class Imgbox extends React.Component {
               ></div>
             ))}
         </div>
-       
+  
+      
       </div>
     );
   }
+  
 }
 
 export default Imgbox;
